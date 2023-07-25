@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+        background-color: #b2babb;
+      }
+      h1 {
+        color: #d68910;
+      }
+      h3 {
+        color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>11.Program to swap two numbers?</h1>
+    <center>
+      <table>
+        <tr>
+          <td><h3>Enter the First Number</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="num1" /></td>
+        </tr>
+	<tr>
+          <td><h3>Enter the Second Number</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="num2" /></td>
+        </tr>
+        <tr>
+          <th style="text-align: center">
+            <button type="button" onClick="swap()">Calculate</button>
+          </th>
+        </tr>
+        <tr>
+          <td><h3>Before Swapping</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="before_swap" /></td>
+        </tr>
+	<tr>
+          <td><h3>After Swapping</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="after_swap" /></td>
+        </tr>
+      </table>
+    </center>
+
+    <script>
+      function swap() {
+        var num1,num2,temp;
+        num1= parseInt(document.getElementById("num1").value);
+	num2= parseInt(document.getElementById("num2").value);
+	document.getElementById("before_swap").value=num1+","+num2;
+	temp=num1;
+	num1=num2;
+	num2=temp;
+        document.getElementById("after_swap").value=num1+","+num2;
+        
+      }
+    </script>
+  </body>
+</html>

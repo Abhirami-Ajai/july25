@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+        background-color: #b2babb;
+      }
+      h1 {
+        color: #d68910;
+      }
+      h3 {
+        color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>13.Program to find sum of Digits of a number?</h1>
+    <center>
+      <table>
+        <tr>
+          <td><h3>Enter the number</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="num1" /></td>
+        </tr>
+        <tr>
+          <th style="text-align: center">
+            <button type="button" onClick="sum()">Check</button>
+          </th>
+        </tr>
+        <tr>
+          <td><h3>Sum of the Digit is</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="sum_find" /></td>
+        </tr>
+      </table>
+    </center>
+
+    <script>
+      function sum() {
+        var num1,rem,sum=0;
+        num1= parseInt(document.getElementById("num1").value);
+	while (num1>0) {
+	rem= num1 % 10;
+	sum = sum + rem;
+	num1/=10;
+	sum = Math.floor(sum);
+	}
+	document.getElementById("sum_find").value=sum;
+	}
+    </script>
+  </body>
+</html>

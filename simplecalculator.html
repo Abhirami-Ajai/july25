@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+        background-color: #b2babb;
+      }
+      h1 {
+        color: #d68910;
+      }
+      h3 {
+        color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>19.Program to create simple calculator?</h1>
+    <center>
+      <table>
+        <tr>
+          <td><h3>Enter the first Number</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="first" /></td>
+        </tr>
+        <tr>
+          <td><h3>Enter the second Number</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="second" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" onClick="add()">Add</button>
+            <button type="button" onClick="sub()">Subtract</button>
+            <button type="button" onClick="mul()">Multiply</button>
+            <button type="button" onClick="div()">Divide</button>
+          </td>
+        </tr>
+        <tr>
+          <td><h3>Result is</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="res" /></td>
+        </tr>
+      </table>
+    </center>
+
+    <script>
+      function add() {
+        let num1, num2, result;
+        num1 = parseInt(document.getElementById("first").value);
+        num2 = parseInt(document.getElementById("second").value);
+        result = num1 + num2;
+        document.getElementById("res").value = result;
+      }
+      function sub() {
+        let num1, num2, result;
+        num1 = parseInt(document.getElementById("first").value);
+        num2 = parseInt(document.getElementById("second").value);
+        result = num1 - num2;
+        document.getElementById("res").value = result;
+      }
+      function mul() {
+        let num1, num2, result;
+        num1 = parseInt(document.getElementById("first").value);
+        num2 = parseInt(document.getElementById("second").value);
+        result = num1 * num2;
+        document.getElementById("res").value = result;
+      }
+      function div() {
+        let num1, num2, result;
+        num1 = parseInt(document.getElementById("first").value);
+        num2 = parseInt(document.getElementById("second").value);
+        result = num1 / num2;
+        document.getElementById("res").value = result;
+      }
+    </script>
+  </body>
+</html>

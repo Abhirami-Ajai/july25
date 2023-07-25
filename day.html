@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+        background-color: #b2babb;
+      }
+      h1 {
+        color: #d68910;
+      }
+      h3 {
+        color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>18.Program to find corresponding day in a week?</h1>
+    <center>
+      <table>
+        <tr>
+          <td><h3>Enter the number</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="num1" /></td>
+        </tr>
+        <tr>
+          <th style="text-align: center">
+            <button type="button" onClick="day()">Check</button>
+          </th>
+        </tr>
+        <tr>
+          <td><h3>Day is</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="week_day" /></td>
+        </tr>
+      </table>
+    </center>
+
+    <script>
+      function day() {
+	var ch,day;
+	ch= parseInt(document.getElementById("num1").value);
+        switch(ch) {
+	case 1:
+	       day = "Sunday";
+    	       break;
+        case 2:
+	       day = "Monday";
+    	       break;
+	case 3:
+	       day = "Tuesday";
+    	       break;
+	case 4:
+	       day = "Wednesday";
+    	       break;
+	case 5:
+	       day = "Thursday";
+    	       break;
+	case 6:
+	       day = "Friday";
+    	       break;
+	case 7:
+	       day = "Saturday";
+    	       break;
+	default:
+		day="Ooops";
+	}
+	document.getElementById("week_day").value=day;
+	}
+    </script>
+  </body>
+</html>

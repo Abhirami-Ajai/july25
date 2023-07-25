@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+        background-color: #b2babb;
+      }
+      h1 {
+        color: #d68910;
+      }
+      h3 {
+        color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>10.Program to find whether a given year is leap year or not?</h1>
+    <center>
+      <table>
+        <tr>
+          <td><h3>Enter the Year</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="year" /></td>
+        </tr>
+        <tr>
+          <th style="text-align: center">
+            <button type="button" onClick="leap()">Check</button>
+          </th>
+        </tr>
+        <tr>
+          <td><h3>This is a</h3></td>
+          <td>:</td>
+          <td><input type="textbox" id="year_leap" /></td>
+        </tr>
+      </table>
+    </center>
+
+    <script>
+      function leap() {
+        var year;
+        year= parseInt(document.getElementById("year").value);
+        if ((year % 4 == 0)&&(year % 100 != 0)) {
+          document.getElementById("year_leap").value="Leap Year";
+        } 
+	else if(year % 400 == 0) {
+          document.getElementById("year_leap").value="Leap Year";
+        }
+	else {
+          document.getElementById("year_leap").value=" not a Leap Year";
+	}
+      }
+    </script>
+  </body>
+</html>

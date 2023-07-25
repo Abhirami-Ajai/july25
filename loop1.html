@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+        background-color: #b2babb;
+      }
+      h1 {
+        color: #d68910;
+      }
+      h3 {
+        color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>20.Program to print 1-100 without using loop?</h1>
+    <center>
+      <table>
+	<tr>
+          <th style="text-align: center">
+            <button type="button" onClick="printNos()">Print</button>
+          </th>
+        </tr>
+      </table>
+    </center>
+    <p id="demo"></p>
+    <script>
+     function printNos(n)
+    {
+        if(n > 0)
+        {
+            printNos(n - 1);
+            document.write(n + " ");
+        }
+        return;
+    }
+    printNos(100);
+    </script>
+  </body>
+</html>
